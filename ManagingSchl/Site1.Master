@@ -1,0 +1,23 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="ManagingSchl.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <asp:Menu ID="Menu3" runat="server" DataSourceID="SiteMapDataSource1" OnMenuItemClick="Menu3_MenuItemClick">
+        </asp:Menu>
+        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+        <asp:Image ID="Image1" runat="server" Height="259px" ImageUrl="~/Content/Rainbow.png" Width="601px" />
+    </form>
+</body>
+</html>
